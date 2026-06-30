@@ -1,0 +1,7 @@
+{
+    "voice_risk": "LOW",
+    "text_risk": "LOW",
+    "image_risk": "LOW",
+    "final_threat": "LOW",
+    "recommendation": "No significant scam indicators detected."
+}
