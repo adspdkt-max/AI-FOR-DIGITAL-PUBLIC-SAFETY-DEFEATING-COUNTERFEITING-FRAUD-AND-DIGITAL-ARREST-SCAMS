@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SentinelAI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <h1>🛡 SentinelAI</h1>
+
+    <ul>
+        <li><a href="#dashboard"> Dashboard</a></li>
+        <li><a href="#text"> Text Analysis</a></li>
+        <li><a href="#voice"> Voice Analysis</a></li>
+        <li><a href="#currency"> Currency Check</a></li>
+        <li><a href="#face"> Face Analysis</a></li>
+        <li><a href="#network"> Fraud Network</a></li>
+        <li><a href="#crime"> Crime Hotspots</a></li>
+    </ul>
+
+</div>
+
+<div class="main" id="dashboard">
+
+    <div class="header">
+
+        <h1>DETECT. ANALYZE. PROTECT.</h1>
+
+        <p>AI Powered Fraud Intelligence Platform</p>
+
+    </div>
+
+
+    <div class="hero-card">
+
+        <h2>🛡 SentinelAI Cyber Defense Center</h2>
+
+        <p>
+            Real-time AI-powered fraud detection for
+            voice scams, phishing texts, fake currency,
+            deepfakes, cyber fraud networks and
+            threat intelligence.
+        </p>
+
+    </div>
+
+    <div class="grid">
+
+   
+
+        <div class="card" id="text">
+
+            <h2> Text Analysis</h2>
+
+            <textarea
+                id="textInput"
+                placeholder="Paste suspicious message..."
+            ></textarea>
+
+            <button onclick="analyzeText()">
+                Analyze Text
+            </button>
+
+            <div id="textResult"></div>
+
+        </div>
+
+       
+        <div class="card" id="voice">
+
+            <h2> Voice Analysis</h2>
+
+            <input type="file" id="voiceFile">
+
+            <button onclick="analyzeVoice()">
+                Analyze Voice
+            </button>
+
+            <div id="voiceResult"></div>
+
+        </div>
+
+     
+
+        <div class="card" id="currency">
+
+            <h2> Currency Detection</h2>
+
+            <input type="file" id="currencyFile">
+
+            <button onclick="analyzeCurrency()">
+                Analyze Currency
+            </button>
+
+            <div id="currencyResult"></div>
+
+        </div>
+
+     
+
+        <div class="card" id="face">
+
+            <h2> Face Detection</h2>
+
+            <input type="file" id="faceFile">
+
+            <button onclick="analyzeFace()">
+                Analyze Face
+            </button>
+
+            <div id="faceResult"></div>
+
+        </div>
+
+        
+
+        <div class="card threat-card">
+
+            <h2> Threat Assessment</h2>
+
+            <div class="system-status">
+
+                <span class="online-dot"></span>
+
+                System Status: ONLINE
+
+            </div>
+
+            <div class="meter">
+
+                <div id="meterFill"></div>
+
+            </div>
+
+            <button onclick="calculateThreat()">
+    Calculate Threat
+</button>
+
+<br><br>
+
+<button onclick="downloadReport()">
+    📄 Download PDF Report
+</button>
+
+<div id="finalResult"></div>
+
+        </div>
+
+     
+
+        <div class="card" id="network">
+
+            <h2> Fraud Network Intelligence</h2>
+
+            <button onclick="analyzeNetwork()">
+                Analyze Network
+            </button>
+
+            <div id="networkResult"></div>
+
+        </div>
+
+    
+
+        <div class="card" id="crime">
+
+            <h2> Crime Hotspots</h2>
+
+            <button onclick="loadCrimeHotspots()">
+                Load Hotspots
+            </button>
+
+            <div id="crimeResult"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+
+    SentinelAI © 2026 |
+    AI Powered Digital Public Safety Intelligence Platform
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
